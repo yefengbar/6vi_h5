@@ -1,0 +1,287 @@
+/*
+Author: Hancq Design
+Web: http://www.yefengbar.com/
+*/
+
+/* 全局通用
+----------------------------------------------- */
+body {
+ font-family: Microsoft Yahei, \5FAE\8F6F\96C5\9ED1, \5b8b\4f53, Arial, Lucida, Verdana, Helvetica, sans-serif;
+ color: #222;
+ background-color: #e6e6e6;
+ min-width: 320px;
+}
+body, button, input, textarea {
+ font-size: 12px;
+ line-height: 1.531;
+ outline: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+p, ul, ol, dl, dt, dd, form, blockquote {
+ margin: 0;
+ padding: 0;
+}
+ul, ol {
+ list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+ font-size: 12px;
+ margin: 0;
+ padding: 0;
+font-weight: 500;
+}
+em, b, i {
+ font-style: normal;
+ font-weight: normal;
+}
+img {
+ border: 0;
+}
+a {
+ text-decoration: none;
+ color: #030303;
+}
+a:hover {
+ text-decoration: underline;
+}
+input, img, select {
+ vertical-align: middle;
+}
+.clear {
+ clear: both;
+ height: 0;
+ line-height: 0;
+ font-size: 0;
+}
+.clearfix {
+ overflow: hidden;
+ zoom: 1;
+}
+.none {
+ display: none;
+}
+#captcha {
+ cursor: pointer;
+}
+/* 主体框架
+----------------------------------------------- */
+#wrapper {
+ width: 100%;
+ min-width: 320px;
+ margin: 0 auto;
+ max-width: 100%;
+ 
+ overflow: hidden;
+}
+.top {
+    height: 46px;line-height: 46px;text-align: center;font-size: 20px;border-bottom: 1px solid #a7a7aa;background:#fff;
+}
+.top h2 {font-size: 24px;color:#000}
+.wrap {padding:0 8px;margin-bottom:8px}
+.wrap .mods {background:#fff;}
+.cyan {color:#888}
+/* -- mainNav -- */
+#mainNav {
+ font-size: 16px;
+    margin-bottom:8px;
+}
+#mainNav ul {
+    padding:0 8px;
+ zoom: 1;
+ overflow: hidden;
+}
+#mainNav li {
+ float: left;
+ width: 25%;
+    background: #fff;
+}
+#mainNav li a {
+ display: block;
+    width:100%;
+    height:100%;
+ text-align: center;
+ border-right: solid #e6e6e6 1px;
+ border-bottom: solid #e6e6e6 1px;
+ line-height: 45px;
+margin:-1px 0 0 -1px
+}
+#mainNav li a.last {
+ border-right: none;
+}
+#mainNav li a.cur {
+    background: #e50012;
+    color:#fff;
+}
+/* about
+----------------------------------------------- */
+.mods .mod_t {font-size:15px;line-height:23px;color:#000;border-bottom: solid #e6e6e6 1px;padding:8px 0;}
+.mods .mod_t span {padding-left:12px;background: url(../img/tit_i.jpg) no-repeat left top;display: block;background-size: 4px 23px;}
+.mods .mod_t.noTit span {background: none;border: none}
+.mods .mod_t.noTit {border: none;padding:0}
+.mods .mod_c {padding:10px;}
+.mods .mod_c p {font-size:13px;line-height:16px;padding-bottom:10px;text-indent: 2em;}
+.mods .mod_c .ind .inl p {padding-bottom:0px;padding-top:8px;text-indent: 0em;}
+.mods .mod_c .ind .inl p span {display: block}
+.mods .mod_c p.onem {text-indent: 0em;}
+.onem {text-indent: 0em;}
+.mods .mod_c p.onem b {display: block;font-weight: bold}
+.list2 {display: table;margin-bottom: 13px;width:100%}
+.list2 .l2_l {padding-right:3px;}
+.list2 .l2_r {padding-left:3px;}
+.list2 img {display: block;width:100%}
+.list2 .inl {display: table-cell;text-align: center;width:50%}
+
+/* memo*/
+.memo .inl span {font-size:14px;text-align: center;}
+
+/*case*/
+.case .mods {border-bottom: solid #e6e6e6 1px;}
+.case .mods .mod_t {border-bottom: solid #e6e6e6 0px;}
+.caseList {background: #fff;}
+.caseList li {border-bottom: solid #e6e6e6 1px;padding:13px;}
+.caseList li.cur {background: #f0f0f0}
+.caseList li .caseTit {width: 100%;height:22px;line-height: 22px}
+.caseList li .caseTit span {font-size: 14px;color:#000;display: block}
+.caseList li .caseTit .stit {float:left;}
+.caseList li .caseTit .sbtn {float:right;width:17px;height:22px;background: url(../img/arrow.png) no-repeat center center; cursor: pointer}
+.caseList li .caseTit .sbtn.slide {background: url(../img/arrow1.png) no-repeat center center;}
+.caseList li .caseTxt {display: none}
+.caseList li .caseTxt p {color:#222}
+
+
+.caseb {padding:13px;background: #fff}
+.caseb .caseTit {font-size: 16px}
+.caseb .caseTxt .hs {color:#fd861d}
+
+/*client*/
+.clientList {background: #fff}
+.clientList li .clientTit {width: 100%;height:22px;line-height: 22px}
+.clientList li .clientTit span {font-size: 16px;color:#000;padding-left:13px;}
+.clientList li .clientTit span em {color:#a2a2a2}
+.clientTxt {padding:8px;}
+.clientTxt td {padding-bottom:5px}
+.clientTxt td img {display: block;width:90%;border: 1px solid #eeeeed}
+
+/*case*/
+.case .mod_c .caseTit {font-size: 16px;color:#000;text-indent: 0em;padding:8px 0}
+.case .caseTit span {font-size: 16px;color:#999}
+.case .mod_c .list2 .pos {position: relative;}
+.case .mod_c .list2 .inl .titbg {position: absolute;left:0;bottom:0;width:100%;height:24px;background: #000;opacity: 0.6;}
+.case .mod_c .list2 .inl .titbg span {display: block;width:100%;height:24px; opacity: 1;color:#fff;padding-left:5px;line-height: 24px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.case .mod_c .list2 .cInfo .case_tit {width:98%;line-height: 16px; font-size: 13px;padding: 5px 0;overflow: hidden;text-overflow: ellipsis;text-align: left}
+.case .mod_c .list2 .cInfo .c_sum {text-align: left;line-height: 14px;color:#666;word-break: break-word;}
+.case .mod_c .list2 .cInfo td img {display: block;width:3em;}
+.case .mod_c .list2 .cInfo table {border-collapse:collapse}
+.myCase {padding-top:10px;}
+.myCase a {display: block;width:60%;height:2em;line-height: 2em;margin: 0 auto;text-align: center;font-size: 14px;color:#fff;background: #7f7f7f}
+/*contact*/
+.ad_info {width:100%;margin-top:10px}
+.ad_info td {font-size: 12px;/*white-space:nowrap;*/ word-break:break-all; }
+.ad_info .ai_r {text-align: right;padding-right:8px}
+.mods .hzxq p {text-indent: 0}
+.hzxq .bor {width: 96%;padding:2%;border:1px solid #bfbfbf}
+.hzxq textarea {height: 8em}
+.hzxq .btns {width:100%;height: 2.5em;background: #0587ec;border: none;line-height: 2.5em;text-align: center;font-size: 14px;color:#fff;margin: 0 auto;border-radius: 3px}
+.ainfo {padding:15px 0;}
+
+/*home*/
+.ind_icon {padding:0 6px;display: table}
+.ind_icon li {
+    display: table-cell;
+    width: 16.66%;
+    float: left;
+    padding: 0 0 6px 0;
+    text-align: center;
+}
+.ind_icon li img {display: block;width:90%;margin:0 auto}
+
+/*server*/
+.list31 {display: table;margin-bottom: 10px;width:100%}
+.list31 .l31_l {padding-right:3px;width:30%}
+.list31 .l31_r {padding-left:3px;width:70%}
+.list31 img {display: inline;width:100%;vertical-align: text-top}
+.list31 .inl {display: table-cell;}
+.list31 .inl p {text-indent: 0;padding-bottom: 0;}
+.list31 .inl .l31_en {color:#888}
+.list31 .inl .l31_tit {font-size: 13px;font-weight: bold;}
+.list31 .inl .l31_sum {padding-top: 4px;color:#666}
+
+/* 通用结构	
+----------------------------------------------- */
+/* -- form -- */
+.btn {
+ display: inline-block;
+ background-color: #0072C6;
+ color: #EEE;
+ padding: 8px 5px;
+ text-transform: capitalize;
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 14px;
+ width: 97%;
+}
+.btn:hover {
+ text-decoration: none;
+ color: #FFFFFF;
+ background-color: #007AD5;
+}
+.btnGray {
+ display: inline-block;
+ background-color: #CCC;
+ border: 0;
+ color: #333;
+ padding: 6px 15px;
+ text-transform: capitalize;
+ cursor: pointer;
+ font-weight: bold;
+ width: 97%;
+}
+/* -- input -- */
+.textInput {
+ padding: 8px 5px;
+ border: 1px solid #DDDDDD;
+ font-size: 14px;
+ -webkit-appearance: none;
+ width: 95%;
+}
+.textArea {
+ padding: 8px 5px;
+ border: 1px solid #DDDDDD;
+ font-size: 14px;
+ -webkit-appearance: none;
+ width: 95%;
+}
+/* -- incBox -- */
+.incBox {
+ margin-bottom: 15px;
+}
+.incBox h3 {
+ font-weight: bold;
+ font-size: 16px;
+ color: #0072C6;
+ padding: 0 10px 8px 10px;
+ margin-top: 15px;
+}
+.incBox h3 .more {
+ float: right;
+ font-size: 13px;
+ color: #777777;
+}
+
+/* footer
+----------------------------------------------- */
+.footer {
+ display: block;
+ margin: 0 auto;
+ width: 100%;
+ text-align: center;
+ background: #111;
+padding:15px 0
+}
+.footer ul {width: 100%; height:15px;display: table;font-family: serif}
+.footer ul li {padding:0 1px 0 0;display: table-cell;color:#ccc;text-align: center;height:15px;line-height: 15px;}
+.footer ul li a {color:#fff;line-height: 15px;font-size: 12px}
+.footer .b_pad {padding:0 11px;}
+.footer img {display: block; width:100%}
